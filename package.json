@@ -14,6 +14,7 @@
     "start": "node dist/backend/server.js"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
     "bcryptjs": "latest",
     "bufferutil": "latest",
     "class-variance-authority": "^0.7.1",
