@@ -4,13 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run build:frontend && npm run build:backend",
+    "build": "npm run build:next && npm run build:backend",
+    "build:next": "next build",
     "build:backend": "tsc",
-    "build:frontend": "vite build",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:next\"",
     "dev:backend": "tsx watch src/backend/server.tsx",
-    "dev:frontend": "vite",
-    "preview": "vite preview",
+    "dev:next": "next dev",
+    "preview": "next start",
     "start": "node dist/backend/server.js"
   },
   "dependencies": {
